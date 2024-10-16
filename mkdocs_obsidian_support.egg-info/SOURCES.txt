@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+mkdocs_obsidian_support.egg-info/PKG-INFO
+mkdocs_obsidian_support.egg-info/SOURCES.txt
+mkdocs_obsidian_support.egg-info/dependency_links.txt
+mkdocs_obsidian_support.egg-info/entry_points.txt
+mkdocs_obsidian_support.egg-info/requires.txt
+mkdocs_obsidian_support.egg-info/top_level.txt
