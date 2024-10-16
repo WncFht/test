@@ -4,4 +4,4 @@ mkdocs-glightbox
 mkdocs-statistics-plugin
 mkdocs-heti-plugin
 mkdocs-include-dir-to-nav
-git-revision-date-localized
+mkdocs-git-revision-date-localized-plugin

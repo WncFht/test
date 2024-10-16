@@ -22,7 +22,7 @@ jobs:
           pip install mkdocs-statistics-plugin
           pip install mkdocs-heti-plugin
           pip install mkdocs-include-dir-to-nav
-          pip install git-revision-date-localized
+          pip install mkdocs-git-revision-date-localized-plugin
       - name: Build site
         run: mkdocs build
       - name: Deploy to GitHub Pages
