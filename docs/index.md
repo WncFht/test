@@ -1,20 +1,18 @@
 ---
-nostatistics: True
 statistics: True
+comments: false
 ---
 
 # Welcome to wnc's note!
-
-
 
 [:octicons-link-16: 朋友们!](links/) / 
 [:material-chart-line: 站点统计](javascript:toggle_statistics();)
 
 <div id="statistics" markdown="1" class="card" style="width: 27em; border-color: transparent; opacity: 0; font-size: 75%">
 <div style="padding-left: 1em;" markdown="1">
-页面总数：{{pages}}  
-总字数：{{words}}  
-代码块行数：{{codes}}  
+页面总数：{{ pages }}  
+总字数：{{ words }}  
+代码块行数：{{ codes }}  
 网站运行时间：<span id="web-time"></span>  
 <span id="busuanzi_container_site_uv">访客总人数：<span id="busuanzi_value_site_uv"></span>人  
 <span id="busuanzi_container_site_pv">总访问次数：<span id="busuanzi_value_site_pv"></span>次
@@ -51,3 +49,4 @@ function toggle_statistics() {
     }
 }
 </script>
+
