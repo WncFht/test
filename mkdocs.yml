@@ -1,0 +1,200 @@
+site_name: wnc 的咖啡馆
+site_url: https://WncFht.github.io/
+site_author: wnc
+repo_name: wnc's café
+repo_url: https://github.com/WncFht/WncFht.github.io
+
+theme:
+  name: material
+  language: "zh"
+  custom_dir: overrides
+  icon:
+    logo: material/coffee
+    repo: material/coffee
+  features:
+    - content.code.annotate
+    - content.action.view
+
+    - navigation.tracking
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    # - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    # - navigation.instant
+    # - navigation.instant.progress
+    # - navigation.expand
+
+    - content.code.copy
+    # - toc.follow
+
+    # - search.highlight
+    # - search.share
+    # - search.suggest
+
+  font: false
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default # 日间模式
+      primary: blue grey # 上方的
+      accent: indigo # 链接等可交互元件的高亮色
+      toggle:
+        icon: material/brightness-7 # 图标
+        name: 切换至夜间模式 # 鼠标悬浮提示
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate # 夜间模式
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换至日间模式
+
+markdown_extensions:
+  # - abbr
+  - meta
+  - def_list
+  - attr_list
+  # - admonition
+  # - footnotes
+  - md_in_html
+  - sane_lists
+  - admonition
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  # - pymdownx.caret
+  - pymdownx.critic
+  # - pymdownx.betterem
+  - pymdownx.details
+  - pymdownx.snippets
+  - pymdownx.magiclink
+  # - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  # - markdown.extensions.attr_list
+  - toc:
+      permalink: true
+      toc_depth: 3
+  # - pymdownx.superfences:
+  #     custom_fences:
+  #       - name: mermaid
+  #         class: mermaid
+  #         format:
+  #           pymdownx.superfences.fence_code_format # 代码块高亮插件
+  - pymdownx.highlight: # 代码块高亮
+      anchor_linenums: true
+      linenums: true # 显示行号
+      auto_title: true # 显示编程语言名称
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
+  # - markdown.extensions.toc:
+  #     slugify:
+  #       !!python/object/apply:pymdownx.slugs.slugify { kwds: { case: lower } }
+  #     permalink: "\ue157"
+  # - pymdownx.magiclink:
+  #     repo_url_shorthand: true
+  #     user: WncFht
+  #     repo: WncFht.github.io
+  # - pymdownx.snippets:
+  #     auto_append:
+  #       - includes/abbreviations.md
+  
+  # - pymdownx.superfences:
+  #     custom_fences:
+  #       - name: mermaid
+  #         class: mermaid
+  #         format: !!python/name:pymdownx.superfences.fence_code_format
+
+validation:
+  nav:
+    omitted_files: info
+    not_found: warn
+    absolute_links: info
+  links:
+    not_found: ignore
+    absolute_links: ignore
+    unrecognized_links: ignore
+
+extra:
+  generator: false
+  social:
+    # - icon: fontawesome/brands/twitter
+    #   link: https://twitter.com/
+    - icon: fontawesome/brands/github
+      link: https://github.com/WncFht
+    # - icon: fontawesome/brands/bilibili
+    #   link: https://space.bilibili.com/1407028951?spm_id_from=333.1007.0.0
+    # - icon: fontawesome/solid/paper-plane
+    #   link: mailto:<@qq.com> #联系方式
+  # analytics:
+  #   provider: google
+  #   property: YOUR-ANALYTICS-ID
+
+extra_css:
+  # - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+  - https://cdn.tonycrane.cc/utils/katex.min.css
+  - https://cdn.tonycrane.cc/jbmono/jetbrainsmono.css
+  - https://cdn.tonycrane.cc/lxgw/lxgwscreen.css
+  - css/custom.css
+  - css/tasklist.css
+  - css/card.css
+  - css/flink.css
+  # - css/heti.css
+  # - css/changelog_extra.css
+  # - css/flod_toc.css
+  # - css/grid cards.css # 好用的但还没用
+  # - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css
+  # - css/extra.css
+  # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
+
+
+extra_javascript:
+  - js/katex.js
+  - https://cdn.tonycrane.cc/utils/katex.min.js
+  - https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
+  # - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
+  # - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+  # - js/custom.js
+  # - js/heti.js
+  # - js/toc.js
+
+plugins:
+  - search
+  - glightbox:
+      width: 80%
+  - statistics
+  - heti
+  - include_dir_to_nav:
+      sort_file: true
+      sort_directory: true
+  # - rss
+  # - git-revision-date-localized:
+  #     type: datetime
+  #     timezone: Asia/Shanghai
+  #     locale: zh
+  #     enable_creation_date: true
+  #     exclude:
+  #       - index.md
+  # - changelog
+  # - mkdocs-jupyter:
+  #     include_source: True
+  #     execute: False
+  #     ignore: ["*.py"]
+
+nav:
+  - Home: 
+    - index.md
+    - 友链: links.md
+  - cs61a: cs61a
+  - cs61c: cs61c
+  - SLAM: slam
+  - 天元公学生存指南: tygx_exp
+  - 动手学深度学习: Dive into deep learning
+  - 总结: summary
