@@ -2,10 +2,10 @@ name: Deploy MkDocs
 on:
   push:
     branches:
-      - master  # 设置触发部署的分支
+      - main  # 设置触发部署的分支
   pull_request:
     branches:
-      - master
+      - main
 
 
 jobs:
