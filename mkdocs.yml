@@ -5,6 +5,7 @@ repo_name: wnc's café
 repo_url: https://github.com/WncFht/notes/
 edit_uri: edit/main/docs/
 
+
 theme:
   name: material
   language: "zh"
@@ -123,8 +124,9 @@ validation:
     absolute_links: ignore
     unrecognized_links: ignore
 
+copyright: Copyright &copy; 2024 <a href="https://github.com/WncFht" target="_blank" rel="noopener">WncFht</a>
+
 extra:
-  generator: false
   social:
     # - icon: fontawesome/brands/twitter
     #   link: https://twitter.com/
