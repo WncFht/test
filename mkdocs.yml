@@ -179,13 +179,13 @@ plugins:
       sort_directory: true
   # - obsidian_support
   # - rss
-  - git-revision-date-localized:
-      type: datetime
-      timezone: Asia/Shanghai
-      locale: zh
-      enable_creation_date: true
-      exclude:
-        - index.md
+  # - git-revision-date-localized:
+  #     type: datetime
+  #     timezone: Asia/Shanghai
+  #     locale: zh
+  #     enable_creation_date: true
+  #     exclude:
+  #       - index.md
   # - changelog
   # - mkdocs-jupyter:
   #     include_source: True
