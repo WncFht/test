@@ -196,8 +196,10 @@ nav:
   - Home: 
     - index.md
     - 友链: links.md
-  - cs61a: cs61a
-  - cs61c: cs61c
-  - SLAM: slam
-  - 动手学深度学习: Dive into deep learning
+  - 计算机基础: CS basic
+  - 传统计算机视觉: traditional cv
+  - AI: AI
+  - Robot: Robot
+  - 环境配置: Environment
+  - 一些工具: Technology
   - 总结: summary

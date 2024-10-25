@@ -10,7 +10,7 @@
 - ndarray (MXNet)
 - Tensor (TensorFlow)
 
-```
+```python
 x = torch.arrange(12)
 x.shape
 x.numel()
@@ -29,7 +29,7 @@ torch.randn(3, 4)
 	- ==
 - concatenate
 
-```
+```python
 torch.cat((X, Y), dim = 0) # 竖着加
 torch.cat((X, Y), dim = 1) # 横着加
 x.sum()
@@ -44,8 +44,7 @@ x.sum()
 
 ### 2.2 数据预处理
 
-pandas
-
+- pandas
 - read_csv ()
 - NaN
 	- fillna (inputs.mean ())
@@ -135,7 +134,7 @@ $$
 - computational graph
 - backpropagate
 
-```
+```python
 x.requires_grad_(True)  # 等价于x=torch.arange(4.0,requires_grad=True)
 x.grad  # 默认值是None
 y = 2 * torch.dot(x, x)
@@ -146,7 +145,7 @@ x.grad == 4 * x
 
 #### 2.5.1 非标量变量的反向传播
 
-```
+```python
 # 对非标量调用backward需要传入一个gradient参数，该参数指定微分函数关于self的梯度。
 # 本例只想求偏导数的和，所以传递一个1的梯度是合适的
 x.grad.zero_()
@@ -158,7 +157,7 @@ x.grad
 
 #### 2.5.2 分离计算
 
-```
+```python
 x.grad.zero_()
 y = x * x
 u = y.detach()
@@ -176,7 +175,7 @@ x.grad == u
 - distribution
 - multinomial distribution
 
-```
+```python
 fair_probs = torch.ones([6]) / 6
 multinomial.Multinomial(10, fair_probs).sample() # 多个样本
 ```
@@ -300,7 +299,7 @@ $$
 y = \mathbf{w}^\top \mathbf{x} + b + \epsilon,
 $$
 
-其中 $\epsilon \sim \mathcal{N}(0, \sigma^2)$. 因此 y 的 likelihood:
+- 其中 $\epsilon \sim \mathcal{N}(0, \sigma^2)$. 因此 y 的 likelihood:
 
 $$
 P(y \mid \mathbf{x}) = \frac{1}{\sqrt{2 \pi \sigma^2}} \exp\left(-\frac{1}{2 \sigma^2} (y - \mathbf{w}^\top \mathbf{x} - b)^2\right).
@@ -321,7 +320,7 @@ $$
 
 ### 3.2 线性回归的从零开始实现
 
-```
+```python
 %matplotlib inline
 import random
 import torch
@@ -384,7 +383,7 @@ for epoch in range(num_epochs):
 
 ### 3.3 线性回归的简洁实现
 
-```
+```python
 import numpy as np
 import torch
 from torch.utils import data
@@ -453,7 +452,7 @@ $$
 
 #### 3.4.3 全连接层的参数开销
 
-不知道是什么东西
+- 不知道是什么东西
 
 #### 3.4.4 softmax 运算
 
@@ -520,7 +519,7 @@ $$
 
 ### 3.5 图像分类数据集
 
-```
+```python
 %matplotlib inline
 import torch
 import torchvision
@@ -594,7 +593,7 @@ for X, y in train_iter:
 
 ### 3.6 softmax 回归的从零开始实现
 
-```
+```python
 import torch
 from IPython import display
 from d2l import torch as d2l
@@ -764,7 +763,7 @@ predict_ch3(net, test_iter) # 预测
 
 ### 3.7 softmax 回归的简洁实现
 
-```
+```python
 import torch
 from torch import nn
 from d2l import torch as d2l
@@ -798,7 +797,7 @@ $$
 \end{aligned}\end{split}
 $$
 
-```
+```python
 loss = nn.CrossEntropyLoss(reduction='none') # LogSumExp技巧
 
 trainer = torch.optim.SGD(net.parameters(), lr=0.1) # 优化算法
@@ -806,3 +805,77 @@ trainer = torch.optim.SGD(net.parameters(), lr=0.1) # 优化算法
 num_epochs = 10
 d2l.train_ch3(net, train_iter, test_iter, loss, num_epochs, trainer) # 训练
 ```
+
+## 多层感知机
+
+### 过拟合和欠拟合
+
+### dropout
+
+## 深度学习计算
+
+## 卷积神经网络
+
+### LeNet
+
+## 现代卷积神经网络
+
+### AlexNet
+
+### VGG
+
+### NiN
+
+### GoogLeNet
+
+### ResNet
+
+### DenseNet
+
+## 循环神经网络
+
+## 现代循环神经网络
+
+### GRU
+
+### LSTM
+
+### seq2seq
+
+## 注意力机制
+
+### Nadaraya-Watson
+
+### Bahdanau
+
+### Multi-headed attention
+
+### Transformer
+
+## 优化算法
+
+### AdaGrad
+
+### RMSProp
+
+### Adadelta
+
+### Adam
+
+## 计算性能
+
+## 计算机视觉
+
+### SSD
+
+### R-CNN
+
+## 自然语言处理:预训练
+
+### word2vec
+
+### GloVe
+
+### BERT
+
+## 自然语言处理:应用
