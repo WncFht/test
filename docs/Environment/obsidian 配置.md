@@ -54,6 +54,82 @@
 - Local REST API + 简约
 - RSS Reader
 
+## 我的模板
+需要安装 dataview + periodic notes 插件。
+!!! note
+    由于 markdown 代码块嵌套不太行，所以要手动修复。注意修复 '' 带来的代码块问题
+
+=== "daily"
+    ??? note
+        ```
+        # {{date:YYYY}}-{{date:WW}}-{{date:DD}}-{{date:HH}}-{{date:d}}
+
+        ## 1. 计划
+
+        ### 🌅 早晨
+
+        #### 计划 
+
+        #### 复盘 
+
+        ---
+
+        ### ☀️ 中午
+
+        #### 计划 
+
+        #### 复盘 
+
+        ---
+
+        ### 🌇 晚上
+
+        #### 计划
+
+        #### 复盘 
+
+        ---
+
+        ## 2. 笔记索引
+
+        ``dataview
+        LIST FROM ""
+        WHERE file.cday = date("{{date:YYYY}}-{{date:MM}}-{{date:DD}}")
+        ``
+
+        ---
+
+        ## 3. 资源与链接
+
+        ---
+
+        ## 4. 未完成的任务
+
+        ``dataview
+        TASK FROM "dairy/daily"
+        WHERE !completed
+        AND file.day >= (this.file.day - dur(7 days))
+        AND file.day <= this.file.day
+        SORT file.day DESC
+        ``
+
+        ---
+
+        ## 5. 反思
+
+        ```
+=== "weekly"
+    ??? note
+        ```
+        # {{date:YYYY}}-W{{date:WW}}-{{date:DD}}
+
+        ## 1. 本周复盘
+
+        ---
+
+        ## 2. 下周计划
+
+        ```
 ## 3 相关链接
 
 - [PKMer\_PKMer](https://pkmer.cn/)
