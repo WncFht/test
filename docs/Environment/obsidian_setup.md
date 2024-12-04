@@ -2,7 +2,7 @@
 
 ???+note
     如果懒得搞，可以直接 clone 我的配置，放到 .obsidian 文件里。
-    这是[配置文件](https://github.com/WncFht/obsidian-setup/)。
+    这是[配置文件](https://github.com/WncFht/.obsidian)。
 
 ## 1 使用语言
 
