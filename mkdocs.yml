@@ -1,10 +1,9 @@
 site_name: wnc 的咖啡馆
-site_url: https://WncFht.github.io/notes/
+site_url: https://WncFht.github.io/test/
 site_author: wnc
 repo_name: wnc's café
-repo_url: https://github.com/WncFht/notes/
+repo_url: https://github.com/WncFht/test/
 edit_uri: edit/main/docs/
-
 
 theme:
   name: material
@@ -97,7 +96,6 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
 
-
   # - markdown.extensions.toc:
   #     slugify:
   #       !!python/object/apply:pymdownx.slugs.slugify { kwds: { case: lower } }
@@ -109,7 +107,7 @@ markdown_extensions:
   # - pymdownx.snippets:
   #     auto_append:
   #       - includes/abbreviations.md
-  
+
   # - pymdownx.superfences:
   #     custom_fences:
   #       - name: mermaid
@@ -158,7 +156,6 @@ extra_css:
   # - css/extra.css
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
 
-
 extra_javascript:
   - js/katex.js
   - js/mathjax.js
@@ -201,9 +198,9 @@ plugins:
   #     ignore: ["*.py"]
 
 nav:
-  - Home: 
-    - index.md
-    - 友链: links.md
+  - Home:
+      - index.md
+      - 友链: links.md
   - 计算机基础: CS basic
   - 传统计算机视觉: traditional cv
   - AI: AI
