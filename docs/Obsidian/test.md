@@ -9,4 +9,4 @@ tags:
   - .
 ---
 
-![3b4cdfcd-d5c5-4fb7-9cd1-bdc492bea065.png](zob-source/3b4cdfcd-d5c5-4fb7-9cd1-bdc492bea065.png)
+![3b4cdfcd-d5c5-4fb7-9cd1-bdc492bea065](./3b4cdfcd-d5c5-4fb7-9cd1-bdc492bea065.png)
