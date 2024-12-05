@@ -200,6 +200,4 @@ plugins:
 nav:
   - Home:
       - index.md
-  - 日记: Dairy
   - Obsidian 的笔记: Obsidian
-  - 总结: summary
