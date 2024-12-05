@@ -33,7 +33,6 @@ theme:
     # - search.share
     # - search.suggest
 
-
   font: false
   palette:
     - media: "(prefers-color-scheme: light)"
