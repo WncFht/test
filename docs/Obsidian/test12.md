@@ -1,12 +1,12 @@
 ---
-title: Untitled
-date: 2024-12-05 23:05:02
-modify: 2024-12-05 23:05:02
-author: Wnc
-tags: 
-aliases: 
+title: test12
+date: 2024-12-05T23:05:02+0800
+modify: 2024-12-06T00:14:02+0800
+categories: graph
+dir: Obsidian
 share: true
-dir: 
+tags:
+  - graph
 ---
 
 # Untitled
