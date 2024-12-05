@@ -1,14 +1,11 @@
 ---
 title: <% tp.file.title %>
-date: <% tp.file.creation_date("YYYY-MM-DD HH:mm:ss") %>
-modify: <% tp.file.last_modified_date("YYYY-MM-DD HH:mm:ss") %>
-author: Wnc
-tags: 
-aliases: 
+date: <% tp.file.creation_date("YYYY-MM-DDTHH:mm:ss+08:00") %>
+modify: <% tp.file.creation_date("YYYY-MM-DDTHH:mm:ss+08:00") %>
+categories: 
+dir: Obsidian
 share: true
-dir: 
+tags: 
 ---
 
 # <% tp.file.title %>
-
-## References
