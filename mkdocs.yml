@@ -200,6 +200,6 @@ plugins:
 nav:
   - Home:
       - index.md
-  - Obsidian 的笔记: Obsidian
-  - 网络: graph
+  - 日记: dairy
+  
   
